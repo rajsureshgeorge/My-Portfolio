@@ -1044,3 +1044,7 @@ section .container {
 .credits a:hover {
   color: #fff;
 }
+.phone{
+  text-decoration: none;
+  color: #ffffff;
+}
