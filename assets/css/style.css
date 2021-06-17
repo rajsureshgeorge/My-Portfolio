@@ -701,3 +701,9 @@ section .container {
     transform: translateX(-50%);
   }
 }
+
+/* Portfolio */
+.portfolio-details{
+  margin: 0;
+  padding-top: 50px;
+}
