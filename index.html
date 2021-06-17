@@ -32,8 +32,13 @@
     <div class="container">
 
       <h1><a href="index.html">Raj Suresh George </a></h1>
-      <h2 style="padding-left: 0.5rem;">I'm a Tech Enthusiast, <span>Community lover</span>, Web Developer,  <span>Electronics Engineer</span> </h2>
+      <h2> I'm a
+        <span class="text-slider-items">
+          Tech Enthusiast, Community lover , Web Developer ,  Electronics Engineer
+        </span> 
+        <strong class="text-slider"></strong>
 
+    </h2>
       <nav class="nav-menu d-none d-lg-block" style="padding-left: 0.5rem;" id="nav">
         <ul>
           <li class="active"><a href="#header">Home</a></li>
@@ -537,8 +542,8 @@
   </section><!-- End Contact Section -->
 
   <div class="credits col-lg-12 "> <br><br>
-  <p> Designed and Developed by <a href=""><span>Raj</span>  </a></p>
-   <p>Feel Free to take the code.
+  <p> Designed and Developed by <a href=""><span>me</span>  </a></p>
+   <p>
     Raj 😊</p><br>
   </div> 
 
@@ -556,6 +561,34 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
+</h3>
+</div>
+<!-- Import typed.min.js file from typed.js folder -->
+<script src=
+    "assets/js/typed.js">
+</script>
+  
+<!-- Add jquery cdn -->
+<script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+</script>
+<!-- Add this script for successful 
+   implementation of typed.js  -->
+<script>
+   if ($(".text-slider").length == 1) {
+         
+       var typed_strings = 
+           $(".text-slider-items").text();
+
+       var typed = new Typed(".text-slider", {
+           strings: typed_strings.split(", "),
+           typeSpeed: 50,
+           loop: true,
+           backDelay: 900,
+           backSpeed: 30,
+       });
+   }
+</script>
 </body>
 
 </html>

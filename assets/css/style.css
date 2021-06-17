@@ -58,6 +58,9 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 997;
   overflow-y: auto;
 }
+.text-slider-items {
+  display: none;
+}
 
 #header * {
   transition: ease-in-out 0.3s;
@@ -148,7 +151,7 @@ h1, h2, h3, h4, h5, h6 {
 .nav-menu {
   margin-top: 35px;
 }
-
+ 
 .sticky{
   position: fixed;
   top: 0;
@@ -215,6 +218,7 @@ h1, h2, h3, h4, h5, h6 {
   background: none;
   font-size: 24px;
   transition: all 0.4s;
+  color:#18d26e;
   outline: none !important;
   line-height: 1;
   cursor: pointer;
